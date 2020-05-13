@@ -1,0 +1,36 @@
+@import '../../../default';
+
+.custom-input {
+  width: 394px;
+  height: 44px;
+  padding: 0 10px;
+  background-color: $input-background-color;
+  border: 1px solid $input-border-default;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  transition: border .4s;
+
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+
+  &:focus {
+    border-color: $input-border-focused;
+  }
+
+  &.error {
+    border-color: $input-border-error;
+  }
+
+  &.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}

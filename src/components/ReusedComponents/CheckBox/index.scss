@@ -1,0 +1,35 @@
+@import '../../../default';
+
+.custom-checkbox {
+  width: 394px;
+  height: 20px;
+
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+
+  &.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &>input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background: $checkbox-background-color;
+    border: 0.5px solid $checkbox-border-color;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  &>label {
+    margin-left: 8px;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.24px;
+    color: $checkbox-label-color;
+    cursor: pointer;
+  }
+}
